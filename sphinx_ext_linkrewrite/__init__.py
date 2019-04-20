@@ -1,9 +1,9 @@
 #
-# ht-sphinx/sphinx-ext-linkrewrite/sphinx_ext_linkrewrite/__init__.py ---
+# sphinx-ext-linkrewrite/sphinx_ext_linkrewrite/__init__.py ---
 #
 
-
-"""sphinx_ext_linkrewrite
+"""
+sphinx_ext_linkrewrite
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rewrites the ``refuri`` of :py:class:`nodes.reference` from

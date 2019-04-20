@@ -22,6 +22,10 @@ import sys
 if "SEL_DIR" in os.environ:
     sys.path.insert(0, os.environ["SEL_DIR"])
 
+CONF_DIR=os.path.dirname(__file__)
+PROJECT_DIR=os.path.join(CONF_DIR,"../..")
+sys.path.insert(0,PROJECT_DIR)
+
 # -- Project information -----------------------------------------------------
 
 project = 'sphinx-ext-linkrewrite'

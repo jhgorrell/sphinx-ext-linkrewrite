@@ -25,23 +25,25 @@ to link to the html docs.
 ::
 
     .. linkrewrite::
-   :from: ./docs/source/(?P<path>.*)\.rst
-   :to:   ./\g<path>.html
+       :from: ./docs/source/(?P<path>.*)\.rst
+       :to:   ./\g<path>.html
 
 
 Install
 --------------------------------------------------
 
-::
-
-    pip3 install https://github.com/jhgorrell/sphinx-ext-linkrewrite#egg=sphinx_ext_linkrewrite
-
-
-In your sphinx ``conf.py``:
+To install from github:
 
 ::
 
-    extentions.append('sphinx.ext.linkrewrite')
+    pip3 install git+https://github.com/jhgorrell/sphinx-ext-linkrewrite.git#egg=sphinx_ext_linkrewrite
+
+
+Then, in your sphinx ``conf.py``:
+
+::
+
+    extentions.append('sphinx_ext_linkrewrite')
 
 
 Quickstart

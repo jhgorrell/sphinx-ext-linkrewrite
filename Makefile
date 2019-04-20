@@ -66,6 +66,11 @@ _clean:
 
 #####
 
+# test the pushed version
+_test_github_install:
+	pip3 uninstall sphinx_ext_linkrewrite
+	pip3 install git+https://github.com/jhgorrell/sphinx-ext-linkrewrite.git#egg=sphinx_ext_linkrewrite
+
 _test+=${SEL_VE_DIR}
 _test+=_docs_all
 

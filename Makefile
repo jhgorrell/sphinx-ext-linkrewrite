@@ -34,7 +34,7 @@ ${SEL_VE_DIR}:
 
 #####
 
-autopep8_files=$(shell find src setup.py -name \*.py | sort)
+autopep8_files=$(shell find sphinx_ext_linkrewrite setup.py -name \*.py | sort)
 
 _isort:
 	isort \

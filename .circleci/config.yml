@@ -1,0 +1,26 @@
+#
+# sphinx-ext-linkrewrite/.circleci/config.yml ---
+#
+
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+
+    working_directory: ~/sphinx-ext-linkrewrite
+
+    steps:
+      - checkout
+
+      - run:
+          name: Build VE
+          command: |
+            source ./setup.env
+            make _ve_rebuild
+
+      - run:
+          name: Run Tests
+          command: |
+            source ./setup.env
+            make

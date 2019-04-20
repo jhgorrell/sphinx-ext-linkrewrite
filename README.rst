@@ -62,7 +62,7 @@ To get started as a dev:
 Todo:
 --------------------------------------------------
 
-- Make ``linkrewrite`` depend on the output backend.
+- Have ``linkrewrite`` conditinal on the output backend.
 
 
 Links

@@ -37,11 +37,10 @@ Only the first matching rule is applied.
 import re
 
 import docutils.parsers.rst.directives
+import sphinx
 from docutils import (
     nodes,
 )
-
-import sphinx
 from sphinx.transforms import (
     SphinxTransform,
 )

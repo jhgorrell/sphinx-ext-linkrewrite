@@ -71,6 +71,7 @@ Todo:
 Links
 ----------------------------------------
 
-- https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
+- https://github.com/jhgorrell/sphinx-ext-linkrewrite
 - https://github.com/sphinx-doc/sphinx/blob/master/sphinx/ext/extlinks.py
 - https://sphinx-ext-linkrewrite.readthedocs.io/en/latest/
+- https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html

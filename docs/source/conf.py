@@ -21,10 +21,11 @@ import sys
 
 if "SEL_DIR" in os.environ:
     sys.path.insert(0, os.environ["SEL_DIR"])
-
-CONF_DIR=os.path.dirname(__file__)
-PROJECT_DIR=os.path.join(CONF_DIR,"../..")
-sys.path.insert(0,PROJECT_DIR)
+else:
+    #
+    CONF_DIR=os.path.dirname(__file__)
+    PROJECT_DIR=os.path.join(CONF_DIR,"../..")
+    sys.path.insert(0,PROJECT_DIR)
 
 # -- Project information -----------------------------------------------------
 
@@ -56,13 +57,6 @@ extensions = [
     #
     'sphinx_ext_linkrewrite',
 ]
-
-# for readthedocs
-#try:
-#    import sphinx_ext_linkrewrite
-#    extensions.append('sphinx_ext_linkrewrite')
-#except:
-#    pass
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -1,0 +1,10 @@
+*.egg-info
+*.pyc
+*.tmp
+*secret*
+*~
+.DS_Store
+.\#*
+\#*\#
+__pycache__
+ve

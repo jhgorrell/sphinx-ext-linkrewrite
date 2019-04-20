@@ -1,19 +1,66 @@
 sphinx-ext-linkrewrite README
 ==================================================
 
-A way to rewrite links from one location to another.
+.. image:: https://circleci.com/gh/jhgorrell/sphinx-ext-linkrewrite.svg?style=svg
+   :target: https://circleci.com/gh/jhgorrell/sphinx-ext-linkrewrite
 
-When the top level README is rendered by github or
-bitbucket, the links in that document are relative to the
-project.  However when that document is used by Sphinx, the
-links wont point to the correct spot.
+A way to rewrite sphinx links from one location to another.
 
-When github/bitbucket renders a rst document, it only
-applies markup to the simple links.  So the toplevel links
-need to be simple ones.
+When the top level README is rendered by a simple rst
+processor (github or bitbucket) the links in that document
+are relative to the project.  However, when that document is
+used by Sphinx, the links wont point to the correct spot.
 
 With this extention, Sphinx is capable of transforming the
-links, so the document links will work in the s
+links, so the simple links work and will work then processed.
+
+Example:
+--------------------------------------------------
+
+This README links to 
+`TARGET-DOC <./docs/source/TARGET-DOC.rst>`_.
+When sphinx processes this file, the links will be changed
+to link to the html docs.
+
+::
+
+    .. linkrewrite::
+   :from: ./docs/source/(?P<path>.*)\.rst
+   :to:   ./\g<path>.html
+
+
+Install
+--------------------------------------------------
+
+::
+
+    pip3 install https://github.com/jhgorrell/sphinx-ext-linkrewrite#egg=sphinx_ext_linkrewrite
+
+
+In your sphinx ``conf.py``:
+
+::
+
+    extentions.append('sphinx.ext.linkrewrite')
+
+
+Quickstart
+--------------------------------------------------
+
+To get started as a dev:
+
+::
+
+    git clone https://github.com/jhgorrell/sphinx-ext-linkrewrite.git
+    cd sphinx-ext-linkrewrite
+    source ./setup.env
+    make
+
+
+Todo:
+--------------------------------------------------
+
+- Make ``linkrewrite`` depend on the output backend.
 
 
 Links

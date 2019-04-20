@@ -16,17 +16,17 @@ from distutils.core import (
 setup(
     name="sphinx-ext-linkrewrite",
     version="0.0.1",
-    description="Rewrite sphinx links.",
-    author="HealthTell",
-    url="https://bitbucket.org/healthtell/ht-sphinx/src/master/sphinx-ext-linkrewrite",
+    description="FIXME",
+    author="FIXME",
+    url="FIXME",
     install_requires=[
         "sphinx",
     ],
     packages=[
-        "sphinx_ext_linkrewrite",
+        "sphinx-ext-linkrewrite",
     ],
     # where to find the src.
     package_dir={
-        'sphinx_ext_linkrewrite': 'sphinx_ext_linkrewrite',
+        'sphinx-ext-linkrewrite': 'sphinx_ext_linkrewrite',
     },
 )

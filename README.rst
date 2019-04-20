@@ -4,6 +4,9 @@ sphinx-ext-linkrewrite README
 .. image:: https://circleci.com/gh/jhgorrell/sphinx-ext-linkrewrite.svg?style=svg
    :target: https://circleci.com/gh/jhgorrell/sphinx-ext-linkrewrite
 
+.. image:: https://readthedocs.org/projects/sphinx-ext-linkrewrite/badge/?version=latest
+   :target: https://sphinx-ext-linkrewrite.readthedocs.io/en/latest/?badge=latest
+
 A way to rewrite sphinx links from one location to another.
 
 When the top level README is rendered by a simple rst
@@ -70,3 +73,4 @@ Links
 
 - https://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html
 - https://github.com/sphinx-doc/sphinx/blob/master/sphinx/ext/extlinks.py
+- https://sphinx-ext-linkrewrite.readthedocs.io/en/latest/

@@ -49,9 +49,14 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
-    #
-    'sphinx_ext_linkrewrite',
 ]
+
+# for readthedocs
+try:
+    import sphinx_ext_linkrewrite
+    extensions.append('sphinx_ext_linkrewrite')
+except:
+    pass
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
